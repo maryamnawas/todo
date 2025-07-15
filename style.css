@@ -56,3 +56,69 @@ button:hover {
     list-style: none;
 }
 
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    border-bottom: 1px solid #ccc;
+}
+li:last-child {
+    border-bottom: none;
+}   
+
+#todo-list li {
+    display: flex;
+    align-items: center;
+    background: #f9f9f9;
+    margin-bottom: 8px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#todo-list li .actions {
+    display: flex;
+    gap: 8px; 
+}
+
+#todo-list li span {
+    flex: 1;
+    margin-left: 16px; 
+}
+
+#todo-list button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Complete button */
+.complete-btn {
+    background: #4caf50;
+    color: white;
+}
+li.completed .complete-btn {
+    background: #ff9800;
+}
+
+.complete-btn:hover {
+    background: #268c29;
+    color: white;
+}
+li.completed .complete-btn:hover {
+    background: #ac6700;
+}
+
+/* Delete button */
+.delete-btn {
+    background: #f44336;
+    color: white;
+}
+
+.delete-btn:hover {
+    background: #ad160c;
+    color: white;
+}
